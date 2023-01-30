@@ -135,3 +135,12 @@ nav a:hover{
     position: absolute;
     margin-left: 71rem;
 }
+
+.first-image-container{
+    display: flex;
+    width: 635px;
+    height: 720px;
+    
+    
+}
+
