@@ -322,11 +322,11 @@ input[type=message]:hover{
     border-bottom: 2px solid #1B1D23;
 }
 
-.arrow {
+button{
     width: 80px;
     height: 80px;
-    background-color: #1B1D23;
-    margin-left: 43.5rem;
+    background: #1B1D23;
+    margin-left: 43.4rem;
     margin-top: -1.5rem;
     display: flex;
     justify-content: center;
@@ -334,8 +334,8 @@ input[type=message]:hover{
     cursor: pointer;
 }
 
-.arrow:hover{
-    background: #60636D;
+button:hover{
+    background-color: #60636D;
 }
 
 .footer-container{
@@ -535,12 +535,47 @@ input[type=message]:hover{
 
 @media only screen and (max-width: 480px) and (min-width: 320px) { 
 
-    .desktop-map, .tablet-map{
+    .desktop-map, 
+    .tablet-map, 
+    .line{
         display: none;
     }
 
     .mobile-map{
         display: flex;
+    }
+
+    .mob-menu{
+        margin-top: 4rem;
+        margin-left: -8rem;
+    }
+
+    .first-image-container{
+        display: flex;
+        width: 382px;
+        margin-left: -2.5rem;
+    }
+
+    .image-container{
+        height: 213px;
+    }
+
+    .hero-image{
+        height: 433px;
+    }
+
+    .image-container span{
+        display: none;
+    }
+
+    .image-container-text{
+        width: 446px;
+    height: 343px;
+    }
+
+    .image-container-text h1{
+        width: 311px;
+        font-size: 20px;
     }
     
 }
