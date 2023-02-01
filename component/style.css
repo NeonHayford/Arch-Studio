@@ -99,41 +99,6 @@ nav a:hover{
     background: #60636D;
 }
 
-.footer-container{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5rem;
-    margin-left: 8.8rem;
-    background-color:#EEEFF4;
-    box-sizing: border-box;
-    width: 984px; 
-    height:164px; 
-}
-
-.footer-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.arch-logo-footer {
-    width: 164px;
-    height: 164px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1B1D23;
-}
-
-.arch-logo-footer > svg{
-    fill: #FFFFFF;
-}
-
-.tab-left{
-    position: absolute;
-    margin-left: 71rem;
-}
-
 .first-image-container{
     display: flex;
     height: 720px;
@@ -204,7 +169,6 @@ nav a:hover{
 
 .contact-details-container{
     display: flex;
-    
     height: 320px;
     margin-left: 9.3rem;
 }
@@ -225,7 +189,6 @@ nav a:hover{
 }
 
 .office-container-one h2{
-
     width: 350px;
     font-weight: 700;
     font-size: 15px;
@@ -247,21 +210,19 @@ nav a:hover{
     font-size: 15px;
     line-height: 25px;
     color: #1B1D23;
-
 }
 
 .office-container-one h4:hover{
-    /* width: 2px; */
     cursor: pointer;
     text-decoration: underline;
 }
 
-.mapouters{
+.desktop-map{
     margin-top: 5rem;
     margin-inline-start: 10rem;
 }
 
-.map{
+.tablet-map, .mobile-map{
     display: none;
 }
 
@@ -271,7 +232,6 @@ nav a:hover{
     width: 1110px;
     height: 400px;
     margin-inline-start: 10rem;
-    /* background-color: red; */
 }
 
 .contact-container h1{
@@ -284,23 +244,135 @@ nav a:hover{
     color: #1B1D23;
 }
 
-.mapouter-map, .mob-map{
-    display: none;
+input{
+    width: 730px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 0.1rem;
+    margin: 1.5rem;
 }
 
 input{
-    border-top: none;
-    width: 730px;
-    height: 1px;
-    background: #1B1D23;
+    caret-color: #1B1D23;
 }
 
-.arrow{
-    background-color: #1B1D23;
+input[type=text]{
+    border-bottom: 1px solid #1B1D23;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+input[type=text]::placeholder{
+    width: 75px;
+    height: 22px;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.3125px;
+    color: #C8CCD8;
+}
+
+input[type=email]{
+    border-bottom: 1px solid #1B1D23;
+    padding-left: 1rem;
+    height: 3rem;
+    margin-top: -1rem;
+}
+
+input[type=email]::placeholder{
+    width: 70px;
+    height: 22px;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.3125px;
+    color: #C8CCD8;
+}
+
+input[type=message]{
+    border-bottom: 1px solid #1B1D23;
+    padding-left: 1rem;
+    height: 7.5rem;
+    margin-top: -2rem;
+}
+
+input[type=message]::placeholder{
+    width: 95px;
+    height: 22px;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.3125px;
+    color: #C8CCD8;
+}
+
+input[type=text]:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #1B1D23;
+}
+
+input[type=email]:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #1B1D23;
+}
+
+input[type=message]:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #1B1D23;
+}
+
+.arrow {
     width: 80px;
     height: 80px;
-    font-size: 10px;
+    background-color: #1B1D23;
+    margin-left: 43.5rem;
+    margin-top: -1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+.arrow:hover{
+    background: #60636D;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left: 8.8rem;
+    background-color:#EEEFF4;
+    box-sizing: border-box;
+    width: 984px; 
+    height:164px; 
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arch-logo-footer {
+    width: 164px;
+    height: 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1D23;
+}
+
+.arch-logo-footer > svg{
+    fill: #FFFFFF;
+}
+
+.tab-left{
+    position: absolute;
+    margin-left: 71rem;
+}
+
 
 @media only screen and (max-width: 820px) and (min-width: 768px){
 
@@ -309,7 +381,7 @@ input{
     }
 
     .rotated{
-        margin-left: -5rem;
+        margin-left: -5.4rem;
     }
 
     .mob-menu{
@@ -376,6 +448,10 @@ input{
         width: 446px;
     }
 
+    .office-container-one{
+        margin-left: 0.1rem;
+    }
+
     .office-container-one h4{
         display: flex;
         margin-inline: 26rem;
@@ -383,11 +459,11 @@ input{
         width: 165px;
     }
 
-    .mapouters, .mob-map{
+    .desktop-map, .mobile-map{
         display: none;
     }
 
-    .map{
+    .tablet-map{
         display: flex;
         margin: 3rem;
     }
@@ -395,13 +471,63 @@ input{
     .contact-container{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 572px;
+        margin-left: 3rem;
+    }
+
+    .contact-container h1{
+        height: 56px;
+        width: 455px;
+    }
+
+    form{
+        justify-content: center;
+        align-items: center;
+        width: 522px;
+        margin-left: -1.5rem;
     }
 
     input{
-        width: 572px;
+        width: 522px;
     }
 
+    .arrow{
+        margin-left: 30.3rem;
+    }
+
+    .footer-container{
+        height: 120px;
+        width: 620px;
+        justify-content: baseline;
+    }
+
+    .arch-logo-footer{
+        height: 120px;
+    }
+
+    footer{
+        margin-left: -9.5rem;
+        margin-top: 15rem;
+    }
+
+    nav a{
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .arrow-container a{
+        font-size: 10px;
+    }
+
+    .tab-left{
+        width: 190px;
+        height: 50px;
+        margin-left: 40rem;
+        margin-top: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 }
@@ -409,11 +535,11 @@ input{
 
 @media only screen and (max-width: 480px) and (min-width: 320px) { 
 
-    .mapouters{
+    .desktop-map, .tablet-map{
         display: none;
     }
 
-    .mob-map{
+    .mobile-map{
         display: flex;
     }
     
