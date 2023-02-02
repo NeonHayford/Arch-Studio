@@ -492,8 +492,9 @@ button:hover{
         width: 522px;
     }
 
-    .arrow{
-        margin-left: 30.3rem;
+    button{
+        margin-left: 30.4rem;
+        margin-top: -2.4rem;
     }
 
     .footer-container{
@@ -570,7 +571,8 @@ button:hover{
 
     .image-container-text{
         width: 446px;
-    height: 343px;
+        height: 343px;
+        background-color: red;
     }
 
     .image-container-text h1{
