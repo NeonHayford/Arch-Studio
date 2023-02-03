@@ -46,6 +46,11 @@ main{
     width: 10rem;
 }
 
+.link-tab{
+    margin-top: -3rem;
+    margin-left: 18rem;
+}
+
 nav a{
     width: 10rem;
     font-weight: 700;
@@ -244,6 +249,10 @@ nav a:hover{
     color: #1B1D23;
 }
 
+form{
+    width: 100px;
+}
+
 input{
     width: 730px;
     height: 100%;
@@ -312,22 +321,12 @@ input[type=text]:hover{
     border-bottom: 2px solid #1B1D23;
 }
 
-input[type=email]:hover{
-    cursor: pointer;
-    border-bottom: 2px solid #1B1D23;
-}
-
-input[type=message]:hover{
-    cursor: pointer;
-    border-bottom: 2px solid #1B1D23;
-}
-
 button{
     width: 80px;
     height: 80px;
     background: #1B1D23;
     margin-left: 43.4rem;
-    margin-top: -1.5rem;
+    margin-top: -2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,6 +391,15 @@ button:hover{
 
     nav a{
         width: 100px;
+    }
+
+    .top-logo{
+        margin-left: 3.5rem;
+    }
+
+    .link-tab{
+        margin-top: -2.8rem;
+        margin-left: 18rem;
     }
 
     .hero-image{
@@ -482,10 +490,7 @@ button:hover{
     }
 
     form{
-        justify-content: center;
-        align-items: center;
-        width: 522px;
-        margin-left: -1.5rem;
+        width: 100px;
     }
 
     input{
@@ -538,7 +543,8 @@ button:hover{
 
     .desktop-map, 
     .tablet-map, 
-    .line{
+    .line,
+    .link-tab{
         display: none;
     }
 
@@ -546,14 +552,44 @@ button:hover{
         display: flex;
     }
 
-    .mob-menu{
-        margin-top: 4rem;
-        margin-left: -8rem;
+    .top-logo{
+        margin-top: 0.5rem;
+        margin-left: 1rem;
     }
 
+    .mob-menu{
+        height: 1rem;
+    }
+
+    .mob-open{
+        display: flex;
+    }
+
+    .mob-close, .mob-open{
+        margin-left: 19rem;
+        margin-top: -2rem;
+    }
+
+    .mob-list-item{
+        display: flex;
+        margin-top: 2rem;
+        color: #1B1D23;
+    }
+
+    .link-tab{
+        position: absolute;
+        width: 325px;
+        height: 235px;
+        margin-left: 1.1rem;
+        margin-top: 1.7rem;
+        background: #EEEFF4;
+    }
+
+ 
     .first-image-container{
         display: flex;
         width: 382px;
+        height: 455px;
         margin-left: -2.5rem;
     }
 
@@ -570,14 +606,109 @@ button:hover{
     }
 
     .image-container-text{
-        width: 446px;
-        height: 343px;
-        background-color: red;
+        width: 401px;
+        height: 355px;
+        margin-left: -17rem;
+        margin-top: -2rem;
+        background: #FFFFFF;
     }
 
     .image-container-text h1{
-        width: 311px;
-        font-size: 20px;
+        width: 253px;
+        font-size: 38px;
+        margin-top: 4rem;
+        line-height: 48px;
+        letter-spacing: -1px;
     }
+
+    .image-container-text p{
+        width: 311px;
+        margin-left: 3.9rem;
+        margin-top: -0.7px;
+    }
+
+    .dash{
+        margin-left: 0.5rem;
+    }
+
+    .contact-details-container{
+        display: flex;
+        flex-direction: column;
+        width: 351px;
+        height: 760px;
+        margin-left: -1.5rem;
+    }
+
+    .office-container-one h2{
+        width: 100px;
+    }
+
+    .contact-details-container h1{
+        width: 17rem;
+        margin-left: 1.7rem;
+    }
+
+    .office-container-one {
+        width: 170px;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        width: 351px;
+        height: 760px;
+        margin-left: -1.5rem;
+    }
+
+    .contact-container h1{
+        margin-left: 1.9rem;
+        width: 240px;
+    }
+
+    .mobile-map{
+        margin-top: 4rem;
+    }
+
+    input{
+        width: 308px;
+    }
+
+    button{
+        margin-left: 17rem;
+    }
+
+    footer{
+        display: flex;
+        /* justify-content: center;
+        width: 180px; */
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 362px;
+        height: 400px;
+        margin-top: -6rem;
+        margin-left: -1rem;
+    }
+
+    .arch-logo-footer{
+        margin: 6rem;
+        margin-top: -5rem;
+    }
+
+    .tab-left{
+        margin-left: -3.5rem;
+        margin-top: 15rem;
+    }
+
+    .footer-nav{
+        margin-left: 3rem;
+        margin-top: -2rem;
+    }
+    }
+
     
-}
+
+    
+
