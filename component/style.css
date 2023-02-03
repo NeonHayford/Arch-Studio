@@ -4,6 +4,7 @@
     border-style: solid;
     scroll-behavior: smooth;
 }
+
 body{
     font-family: 'spartan';
     font-style: normal;
@@ -66,7 +67,6 @@ nav a{
 nav a:hover{
     cursor: pointer;
     color: #1B1D23;
-
 }
 
 .mob-open, .mob-close{
@@ -679,8 +679,6 @@ button:hover{
 
     footer{
         display: flex;
-        /* justify-content: center;
-        width: 180px; */
     }
 
     .footer-container {
@@ -706,9 +704,4 @@ button:hover{
         margin-left: 3rem;
         margin-top: -2rem;
     }
-    }
-
-    
-
-    
-
+}
