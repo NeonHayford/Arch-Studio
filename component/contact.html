@@ -142,10 +142,15 @@
       </h1>
       <form>
         <input class="name" type="text"  id="name" placeholder="Name">
+        <p for="" id="alert-name" class="error"></p>
+
         <input class="e-mail" type="email"  name="email" id="email"  placeholder="Email">
+        <p for="" id="alert-email" class="error"></p>
+
+        <div class="message-container">
         <input  class="e-message" type="message" id="message"  placeholder="Message">
         
-        <p for="" class="alert-message"></p>
+        <p for="" id="alert-message" class="error"></p>
         <button>
           <svg xmlns="http://www.w3.org/2000/svg" 
             width="26"
@@ -158,6 +163,7 @@
             </g>
           </svg>
         </button>
+        </div>
       </form>
     </div>
 

@@ -11,8 +11,8 @@ body{
 }
 
 main{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;;
 }
 
 .line{
@@ -235,7 +235,7 @@ nav a:hover{
     display: flex;
     margin-top: 10rem;
     width: 1110px;
-    height: 400px;
+    height: 350px;
     margin-inline-start: 10rem;
 }
 
@@ -250,7 +250,7 @@ nav a:hover{
 }
 
 form{
-    width: 100px;
+    width: 100px;;
 }
 
 input{
@@ -284,8 +284,12 @@ input[type=text]::placeholder{
     color: #C8CCD8;
 }
 
+input[type=text]:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #1B1D23;
+}
+
 input[type=email]{
-    border-bottom: 1px solid #1B1D23;
     padding-left: 1rem;
     height: 3rem;
     margin-top: -1rem;
@@ -301,10 +305,14 @@ input[type=email]::placeholder{
 }
 
 input[type=message]{
-    border-bottom: 1px solid #1B1D23;
     padding-left: 1rem;
     height: 7.5rem;
     margin-top: -2rem;
+}
+
+.e-message,
+.e-mail{
+    border-bottom: 1px solid #1B1D23;
 }
 
 input[type=message]::placeholder{
@@ -316,25 +324,45 @@ input[type=message]::placeholder{
     color: #C8CCD8;
 }
 
-input[type=text]:hover{
-    cursor: pointer;
-    border-bottom: 2px solid #1B1D23;
+.message-container{
+    width: 775px;
+    height: 177px;
+    display: flex;
+    margin-top: 3rem;
+    position: relative;
+    flex-direction: column;
 }
+
+.error{
+    position: relative;
+    width: 9rem;
+    height: 0;
+    top: -4rem;
+    margin-left: 38rem;
+    color:red;
+    
+}
+
+.alert{
+    border-bottom: 2px solid red ;
+    
+}
+
 
 button{
     width: 80px;
     height: 80px;
     background: #1B1D23;
     margin-left: 43.4rem;
-    margin-top: -2.5rem;
+    margin-top: -3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 button:hover{
-    background-color: #60636D;
+    background: #60636D;
+    cursor: pointer;
 }
 
 .footer-container{
@@ -537,7 +565,6 @@ button:hover{
 
 
 }
-
 
 @media only screen and (max-width: 480px) and (min-width: 320px) { 
 
