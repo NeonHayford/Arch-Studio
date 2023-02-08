@@ -233,9 +233,10 @@ nav a:hover{
 
 .contact-container{
     display: flex;
+    flex-direction: row;
     margin-top: 10rem;
     width: 1110px;
-    height: 350px;
+    height: 100%;
     margin-inline-start: 10rem;
 }
 
@@ -250,10 +251,10 @@ nav a:hover{
 }
 
 form{
-    width: 100px;;
+    width: 100%;
 }
 
-input{
+input, textarea{
     width: 730px;
     height: 100%;
     border: none;
@@ -271,17 +272,20 @@ input{
 
 input[type=text]{
     border-bottom: 1px solid #1B1D23;
-    height: 3rem;
     padding-left: 1rem;
+    height: 3.8rem;
+    font-size: 18px;
 }
+
 
 input[type=text]::placeholder{
     width: 75px;
     height: 22px;
     font-size: 20px;
     line-height: 22px;
+    font-weight: 700;
     letter-spacing: -0.3125px;
-    color: #C8CCD8;
+    color: #d8c8c8;
 }
 
 input[type=text]:hover{
@@ -292,7 +296,8 @@ input[type=text]:hover{
 input[type=email]{
     padding-left: 1rem;
     height: 3rem;
-    margin-top: -1rem;
+    /* margin-top: -1rem; */
+    
 }
 
 input[type=email]::placeholder{
@@ -300,14 +305,16 @@ input[type=email]::placeholder{
     height: 22px;
     font-size: 20px;
     line-height: 22px;
+    font-weight: 700;
     letter-spacing: -0.3125px;
     color: #C8CCD8;
 }
 
-input[type=message]{
+textarea[type=message]{
     padding-left: 1rem;
-    height: 7.5rem;
+    height: 7rem;
     margin-top: -2rem;
+    width: 47rem;
 }
 
 .e-message,
@@ -315,22 +322,15 @@ input[type=message]{
     border-bottom: 1px solid #1B1D23;
 }
 
-input[type=message]::placeholder{
+textarea[type=message]::placeholder{
     width: 95px;
     height: 22px;
     font-size: 20px;
+    font-weight: 700;
     line-height: 22px;
     letter-spacing: -0.3125px;
     color: #C8CCD8;
-}
-
-.message-container{
-    width: 775px;
-    height: 177px;
-    display: flex;
-    margin-top: 3rem;
-    position: relative;
-    flex-direction: column;
+    margin-top: 5rem;
 }
 
 .error{
@@ -338,26 +338,26 @@ input[type=message]::placeholder{
     width: 9rem;
     height: 0;
     top: -4rem;
+    font-weight: 700;
+    font-size: 15px;
+    font-size: 15px;
+    line-height: 17px;
     margin-left: 38rem;
-    color:red;
+    color: #DF5656;
+    letter-spacing: -0.234375px;
     
 }
 
 .alert{
-    border-bottom: 2px solid red ;
+    border-bottom: 2px solid #DF5656;
     
 }
-
 
 button{
     width: 80px;
     height: 80px;
     background: #1B1D23;
     margin-left: 43.4rem;
-    margin-top: -3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 button:hover{
@@ -518,16 +518,15 @@ button:hover{
     }
 
     form{
-        width: 100px;
+        width: 375px;
     }
 
-    input{
+    input, textarea{
         width: 522px;
     }
 
     button{
         margin-left: 30.4rem;
-        margin-top: -2.4rem;
     }
 
     .footer-container{
@@ -538,6 +537,10 @@ button:hover{
 
     .arch-logo-footer{
         height: 120px;
+    }
+
+    .error{
+        margin-left: 27rem;
     }
 
     footer{
@@ -703,6 +706,22 @@ button:hover{
     button{
         margin-left: 17rem;
     }
+
+    .error{
+        margin-left: 14rem;
+    }
+
+
+    .name:invalid {
+        border: 2px solid red;
+    }
+
+    input[type="text"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: var(--placeholder-color, red);
+}
+
+
 
     footer{
         display: flex;

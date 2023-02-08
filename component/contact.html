@@ -137,35 +137,48 @@
                         <!-- Connect with us  -->
 
     <div class="contact-container">
+      <div>
       <h1>
         Connect with us
       </h1>
-      <form>
-        <input class="name" type="text"  id="name" placeholder="Name">
-        <p for="" id="alert-name" class="error"></p>
+      </div>
+      <div>
+        <form>
+          <div style="height: 110px;">
+            <input class="name" type="text"  id="name" placeholder="Name">
+            <p for="" id="alert-name" class="error"></p>
+          </div>
+          
+          <div style="height: 110px;">
+            <input class="e-mail" type="email"  name="email" id="email"  placeholder="Email">
+            <p for="" id="alert-email" class="error"></p>
+          </div>
 
-        <input class="e-mail" type="email"  name="email" id="email"  placeholder="Email">
-        <p for="" id="alert-email" class="error"></p>
-
-        <div class="message-container">
-        <input  class="e-message" type="message" id="message"  placeholder="Message">
-        
-        <p for="" id="alert-message" class="error"></p>
-        <button>
+          <div style="height: 90px;">
+            <!-- <textarea  class="e-message" type="message" id="message"  placeholder="Message"></textarea> -->
+            <textarea name="message" class="e-message" type="message" id="message" placeholder="Message"></textarea>
+            <p for="" id="alert-message" class="error"></p>
+        </div>
+        <button type="submit">
           <svg xmlns="http://www.w3.org/2000/svg" 
-            width="26"
-            height="20">
+              width="26"
+              height="20">
             <g fill="none" 
-            fill-rule="evenodd" 
-            stroke="#FFFFFF" 
-            stroke-width="2">
-            <path d="M15 1l9 9-9 9M0 10h24"/>
+              fill-rule="evenodd" 
+              stroke="#FFFFFF" 
+              stroke-width="2">
+              <path d="M15 1l9 9-9 9M0 10h24"/>
             </g>
           </svg>
         </button>
+        </form>
+   
+          </div>
         </div>
-      </form>
-    </div>
+        </div>
+        </div>
+      
+    
 
                         <!-- footer  -->
 

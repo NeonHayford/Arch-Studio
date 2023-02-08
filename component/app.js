@@ -1,3 +1,4 @@
+let form = document.querySelector('form');
 let form_name = document.getElementById('name')
 let mail = document.getElementById('email')
 let message = document.getElementById('message')
@@ -7,14 +8,9 @@ let error_name = document.getElementById('alert-name')
 
 const error  = "Can't be empty"
 
-form_name.addEventListener('change', validate)
-mail.addEventListener('change', validate)
-message.addEventListener('change', validate)
-form_name.addEventListener('input',function (){
-document.getElementById('email').classList.add('alert');
-document.getElementById('message').classList.add('alert');
-    });
-function validate(){
+form.addEventListener('submit', function (e) {
+    e.preventDefault()
+
     if(form_name.value === '')
         error_name.innerHTML = error
     else
@@ -29,9 +25,29 @@ function validate(){
         error_message.innerHTML = error
     else
         error_message.innerHTML = ''
+    
+    if (mail.value === "" || !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.value)) {
+        mail.classList.add("alert");
+      error_message.style.display = "block";
+    
+    }
+     if (message.value === "" ) {
+      message.classList.add("alert");
+      error_message.style.display = "block";
 
-}
+    }
+    else {
+      mail.classList.remove("alert");
+      message.classList.remove("alert");
+      error_message.style.display = "none";
+    } 
+})
 
-// document.getElementById('name')
+
+
+    
+
+
+
     
     
