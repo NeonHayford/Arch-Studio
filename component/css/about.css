@@ -317,12 +317,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     opacity: 0;
 }
 
 .image-overlay:hover{
     opacity: 1;
+    transition-timing-function: ease;
+    transition: .5s;
     cursor: pointer;
 }
 
