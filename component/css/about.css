@@ -135,7 +135,7 @@
 .image{
     width: 50%;
     height: 45rem;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/desktop/image-hero.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/desktop/image-hero.jpg');
 }
 
 .container-card{
@@ -444,7 +444,7 @@
 
     .image{
         width: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/tablet/image-hero.jpg');
+        background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/tablet/image-hero.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -623,7 +623,7 @@
 
     .image{
         width: 100%;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/mobile/image-hero.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/mobile/image-hero.jpg');
         /* background: #5bc9ac; */
         background-repeat: no-repeat;
         background-size: cover;
