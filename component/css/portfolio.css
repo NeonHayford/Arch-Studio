@@ -12,7 +12,6 @@
 
 .header{
     width: 80%;
-    /* margin: 0 165px 0 56px; */
     margin-inline: auto; 
 }
 
@@ -52,11 +51,7 @@
     margin-top: 10.4rem;
     width: max-content;
     height: max-content;
-    /* place-items: center; */
 }
-/* .btn-links{
-    display: flex;
-} */
 
 .btn{
     padding: 7px 20px; 
@@ -76,7 +71,6 @@
 
 .btn>a:enabled,.btn>a:hover,.btn>a:active{
     color: #000000;
-    /* border-bottom: 1px solid #1B1D23; */
 }
 
 .btn>a:active{
@@ -118,11 +112,9 @@
     width: 24px;
     height: 24px;
 }
-/* -----------------------main-container styling ----------------------*/
+
 .grid-container{
-    /* width: max-content; */
     height: 2330px;
-    /* height: 100%; */
     width: 100%;
     margin-top: 4rem;
     display: grid;
@@ -132,8 +124,6 @@
 }
 
 .grid{
-    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%); */
-    /* background-size: cover; */
     height: 100%;
 }
 
@@ -293,7 +283,7 @@
     margin: 0 40px;
     margin-top: 446px;
 }
-/* -----------------------footer styling ----------------------*/
+
 .footer{
     width: 100%;
     display: flex;
@@ -309,7 +299,6 @@
     height:164px; 
     margin-top: 5rem;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .footer-logo{ 
@@ -329,7 +318,6 @@
 .footer-background {
     height: 100%;
     background-color:#EEEFF4;
-    /* width: calc(80% - 15%); */
     width: 70%;
     display: flex;
     align-items: center;
@@ -362,9 +350,7 @@
 }
 
 
-/* ------------tablet view-------------- */
 @media only screen and (max-width: 768px){
-    /* -----------------------main-container styling ----------------------*/
     .header{
         width: 100%;
         margin: 0 auto;
@@ -388,10 +374,8 @@
     }
 
     .grid-container{
-        /* margin: 0 auto; */
         margin-top: 3.5rem;
         max-width: 35.813rem;
-        /* min-width: 100%; */
         height: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -481,7 +465,7 @@
         margin-top: 146px;
     }
     
-    /*---------------footer-------------------*/
+
     .footer{
         width: 100%;
         height: 0;
@@ -498,7 +482,6 @@
 }
 
 @media only screen and (max-width: 480px){
-    /* -----------------------main-container styling ----------------------*/
     .header{
         width: 100%;
         margin: 0;
@@ -511,7 +494,6 @@
     .header-card{
         justify-content: space-between;
         align-items: center;
-        /* width: 90%; */
         padding-left: 32px;
         padding-top: 32px;
         padding-bottom: 20px;
@@ -521,7 +503,6 @@
     .btn-links{ 
         position: absolute;
         background: #EEEFF4;
-        /* border: 1px solid #EEEFF4; */
         top: 6.05rem;
         right: 0;
         height: 235px;
@@ -574,7 +555,6 @@
         display: none;
     }    
     .grid-container{
-        /* width: 311px; */
         width: max-content;
         height: auto;
         margin: 0 auto;
@@ -587,8 +567,6 @@
 
     .gallery-01{
         height: 240px;
-        /* background-size: cover; */
-        /* background-repeat: no-repeat; */
         background:  linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%, rgba(0, 0, 0, 0.499044) 100%), url('/component/assets/portfolio/mobile/image-seraph.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -685,9 +663,6 @@
     .footer{
         width: 100%;
         height: 28rem;
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
     }
     .footer-card{
         display: flex;
@@ -695,11 +670,8 @@
         position: relative;
         width: 100%; 
         height: max-content;
-        /* height: 23.938rem;  */
         margin-top: 10.5rem;
-        /* align-items: center; */
         background-color:#EEEFF4;
-        /* justify-content: center; */
     }
     
     .footer-logo{ 
@@ -753,8 +725,7 @@
         right: 0;
         display: flex;
         margin-top: 2.2rem;
-        /* gap: 1rem; */
-    }
+    }s
     
     .portfolio-button a {
         text-decoration: none;

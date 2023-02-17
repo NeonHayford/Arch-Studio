@@ -51,7 +51,6 @@
     margin-top: 9.8rem;
     width: max-content;
     height: max-content;
-    /* place-items: center; */
 }
 
 
@@ -117,7 +116,7 @@
     height: 1.5rem;
     margin-right: 2rem;
 }
-/* -----------------------main-container styling ----------------------*/
+
 .grid-container{
     width: 100%;
 }
@@ -138,7 +137,6 @@
 .container-card{
     width:60%;
     background-color: #FFFFFF;
-    /* height: 32.688rem; */
     height: 70%;
     display: flex;
     flex-direction: row;
@@ -149,8 +147,6 @@
 }
 
 .container-card > div{
-    /* margin-top: 182px;
-    margin-left: 182px; */
     margin-top: auto;
     margin-left: auto;
 }
@@ -241,7 +237,6 @@
 
 .image-container{
     width: 70%;
-    /* width: 730px; */
     height: 860px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -258,7 +253,6 @@
 
 .image-01{
     position: absolute;
-    /* width: 350px; */
     max-width: 100%;
     min-width: 100%;
     height: 320px;
@@ -269,7 +263,6 @@
 
 .image-02{
     position: absolute;
-    /* width: 350px; */
     max-width: 100%;
     min-width: 100%;
     height: 320px;
@@ -279,7 +272,6 @@
 }
 .image-03{
     position: absolute;
-    /* width: 350px; */
     max-width: 100%;
     min-width: 100%;
     height: 320px;
@@ -290,7 +282,6 @@
 
 .image-04{
     position: absolute;
-    /* width: 350px; */
     max-width: 100%;
     min-width: 100%;
     height: 320px;
@@ -328,7 +319,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* color: #000; */
 }
 .image-overlay> div > div > a > svg > path{
     fill: #ffffff;
@@ -342,7 +332,7 @@
 .bottom-icon{
     display: none;
 }
-/* -----------------------footer styling ----------------------*/
+
 .footer{
     width: 100%;
     display: flex;
@@ -375,7 +365,6 @@
 .footer-background {
     height: 100%;
     background-color:#EEEFF4;
-    /* width: calc(80% - 15%); */
     width: 70%;
     display: flex;
     align-items: center;
@@ -408,7 +397,6 @@
 }
 
 @media only screen and (max-width: 768px){
-    /* -----------------------main-container styling ----------------------*/
     .header{
         width: 100%;
         margin: 0 33px 0 auto;
@@ -430,7 +418,6 @@
     .btn {
         padding: 7px 10px;
     }
-    /* ___________main ___________ */
 
     .grid-container{
         margin-top: 3.5rem;
@@ -485,7 +472,6 @@
     .image-container{
         width: 100%;
         margin-top: 4rem;
-        /* width: 730px; */
         height: auto;
         gap: 1.6rem;
     }
@@ -495,7 +481,6 @@
     }
 
     .bottom-icon{
-        /* display: inline; */
         width: 5.6rem;
         display: flex;
         align-items: center;
@@ -503,7 +488,6 @@
         margin-top: 8px;
     }
 
-    /*---------------footer-------------------*/
     .footer{
         width: 100%;
         height: 0;
@@ -520,7 +504,6 @@
 }
 
 @media only screen and (max-width: 480px){
-    /* -----------------------main-container styling ----------------------*/
     .header{
         width: 100%;
         margin: 0;
@@ -534,7 +517,6 @@
     .header-card{
         justify-content: space-between;
         align-items: center;
-        /* width: 90%; */
         padding-left: 32px;
         padding-top: 32px;
         padding-bottom: 20px;
@@ -543,7 +525,6 @@
     .btn-links{ 
         position: absolute;
         background: #EEEFF4;
-        /* border: 1px solid #EEEFF4; */
         top: 6.05rem;
         right: 0;
         height: 235px;
@@ -601,7 +582,6 @@
     }
 
     .container-01{
-        /* height: 100%; */
         height: 600px;
     }
 
@@ -619,7 +599,6 @@
     .image{
         width: 100%;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/mobile/image-hero.jpg');
-        /* background: #5bc9ac; */
         background-repeat: no-repeat;
         background-size: cover;
         height: 15rem;
@@ -627,7 +606,6 @@
 
     .container-card {
         width: 90%;
-        /* background-color: #503939; */
         height: 70%;
         flex-direction: row;
         bottom: 0%;
@@ -641,7 +619,6 @@
     .container-card >div> label {
         font-size: 40px;
         font-weight: 700;
-        /* line-height: 48px; */
         letter-spacing: -1px;
     }
 
@@ -680,7 +657,6 @@
         z-index: 10;
     }
 
-    /*---------------footer-------------------*/
     .footer{ 
         width: 100%;
         height: 28rem;
@@ -746,7 +722,6 @@
         right: 0;
         display: flex;
         margin-top: 2.2rem;
-        /* gap: 1rem; */
     }
     
     .portfolio-button a {
