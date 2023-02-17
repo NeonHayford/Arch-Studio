@@ -26,10 +26,11 @@
 }
 
 .page-label{
-    width: 89px;
+    width: 10%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: absolute;
 }
 
@@ -39,23 +40,20 @@
     align-items: center;
 }
 
-.rotated{
+.rotated {
     display: flex;
     align-items: end;
-    /* justify-content: start; */
     font-weight: 500;
     font-size: 15px;
     color: #C8CCD8;
     transform: rotate(90deg);
     letter-spacing: 0.938rem;
-    margin-top: 10rem;
-    width: 212px;
-    margin-left: -4rem;
+    margin-top: 9.8rem;
+    width: max-content;
+    height: max-content;
+    /* place-items: center; */
 }
 
-/* .btn-links{
-    display: flex;
-} */
 
 .btn{
     padding: 0.43rem 1.25rem; 
