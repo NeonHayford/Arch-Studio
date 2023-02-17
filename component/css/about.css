@@ -10,10 +10,9 @@
     width: 100%;
 }
 
-.header{
+.parent-container{
     width: 80%;
     margin-inline: auto;
-
 }
 
 .header-card{
@@ -27,10 +26,11 @@
 }
 
 .page-label{
-    width: 89px;
+    width: 10%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: absolute;
 }
 
@@ -40,23 +40,19 @@
     align-items: center;
 }
 
-.rotated{
+.rotate {
     display: flex;
     align-items: end;
-    /* justify-content: start; */
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 15px;
     color: #C8CCD8;
     transform: rotate(90deg);
     letter-spacing: 0.938rem;
-    margin-top: 9.6rem;
-    width: 212px;
-    margin-left: -4rem;
+    margin-top: 9.8rem;
+    width: max-content;
+    height: max-content;
 }
 
-/* .btn-links{
-    display: flex;
-} */
 
 .btn{
     padding: 0.43rem 1.25rem; 
@@ -68,7 +64,7 @@
 .btn>a{
     padding: 0.4rem 0;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 25px;
     text-decoration: none;
     color: #C8CCD8;
@@ -120,14 +116,14 @@
     height: 1.5rem;
     margin-right: 2rem;
 }
-/* -----------------------main-container styling ----------------------*/
+
 .grid-container{
     width: 100%;
 }
 
 .container-01{
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: row;
 }
@@ -135,13 +131,12 @@
 .image{
     width: 50%;
     height: 45rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/desktop/image-hero.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/desktop/image-hero.jpg');
 }
 
 .container-card{
     width:60%;
     background-color: #FFFFFF;
-    /* height: 32.688rem; */
     height: 70%;
     display: flex;
     flex-direction: row;
@@ -152,8 +147,6 @@
 }
 
 .container-card > div{
-    /* margin-top: 182px;
-    margin-left: 182px; */
     margin-top: auto;
     margin-left: auto;
 }
@@ -244,7 +237,6 @@
 
 .image-container{
     width: 70%;
-    /* width: 730px; */
     height: 860px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -261,7 +253,6 @@
 
 .image-01{
     position: absolute;
-    /* width: 350px; */
     max-width: 100%;
     min-width: 100%;
     height: 320px;
@@ -272,7 +263,6 @@
 
 .image-02{
     position: absolute;
-    /* width: 350px; */
     max-width: 100%;
     min-width: 100%;
     height: 320px;
@@ -282,7 +272,6 @@
 }
 .image-03{
     position: absolute;
-    /* width: 350px; */
     max-width: 100%;
     min-width: 100%;
     height: 320px;
@@ -293,7 +282,6 @@
 
 .image-04{
     position: absolute;
-    /* width: 350px; */
     max-width: 100%;
     min-width: 100%;
     height: 320px;
@@ -317,14 +305,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
 }
 
 .image-overlay:hover{
     opacity: 1;
-    transition-timing-function: ease;
-    transition: .5s;
     cursor: pointer;
 }
 
@@ -333,8 +319,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* color: #000; */
 }
+
 .image-overlay> div > div > a > svg > path{
     fill: #ffffff;
 }
@@ -347,7 +333,7 @@
 .bottom-icon{
     display: none;
 }
-/* -----------------------footer styling ----------------------*/
+
 .footer{
     width: 100%;
     display: flex;
@@ -361,9 +347,7 @@
     position: relative;
     width: 80%; 
     height:164px; 
-    
     align-items: center;
-    /* justify-content: center; */
 }
 
 .footer-logo{ 
@@ -382,7 +366,6 @@
 .footer-background {
     height: 100%;
     background-color:#EEEFF4;
-    /* width: calc(80% - 15%); */
     width: 70%;
     display: flex;
     align-items: center;
@@ -415,8 +398,7 @@
 }
 
 @media only screen and (max-width: 768px){
-    /* -----------------------main-container styling ----------------------*/
-    .header{
+    .parent-container{
         width: 100%;
         margin: 0 33px 0 auto;
     }
@@ -437,7 +419,6 @@
     .btn {
         padding: 7px 10px;
     }
-    /* ___________main ___________ */
 
     .grid-container{
         margin-top: 3.5rem;
@@ -446,7 +427,7 @@
 
     .image{
         width: 100%;
-        background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/tablet/image-hero.jpg');
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/tablet/image-hero.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -502,7 +483,6 @@
     }
 
     .bottom-icon{
-        /* display: inline; */
         width: 5.6rem;
         display: flex;
         align-items: center;
@@ -510,7 +490,6 @@
         margin-top: 8px;
     }
 
-    /*---------------footer-------------------*/
     .footer{
         width: 100%;
         height: 0;
@@ -527,8 +506,7 @@
 }
 
 @media only screen and (max-width: 480px){
-    /* -----------------------main-container styling ----------------------*/
-    .header{
+    .parent-container{
         width: 100%;
         margin: 0;
         
@@ -541,7 +519,6 @@
     .header-card{
         justify-content: space-between;
         align-items: center;
-        /* width: 90%; */
         padding-left: 32px;
         padding-top: 32px;
         padding-bottom: 20px;
@@ -550,7 +527,6 @@
     .btn-links{ 
         position: absolute;
         background: #EEEFF4;
-        /* border: 1px solid #EEEFF4; */
         top: 6.05rem;
         right: 0;
         height: 235px;
@@ -608,7 +584,6 @@
     }
 
     .container-01{
-        /* height: 100%; */
         height: 600px;
     }
 
@@ -625,8 +600,7 @@
 
     .image{
         width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/component/assets/about/mobile/image-hero.jpg');
-        /* background: #5bc9ac; */
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.000) 0%,rgba(0, 0, 0, 0.0001) 0.01%), url('/component/assets/about/mobile/image-hero.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height: 15rem;
@@ -634,7 +608,6 @@
 
     .container-card {
         width: 90%;
-        /* background-color: #503939; */
         height: 70%;
         flex-direction: row;
         bottom: 0%;
@@ -648,7 +621,6 @@
     .container-card >div> label {
         font-size: 40px;
         font-weight: 700;
-        /* line-height: 48px; */
         letter-spacing: -1px;
     }
 
@@ -687,7 +659,6 @@
         z-index: 10;
     }
 
-    /*---------------footer-------------------*/
     .footer{ 
         width: 100%;
         height: 28rem;
@@ -753,7 +724,6 @@
         right: 0;
         display: flex;
         margin-top: 2.2rem;
-        /* gap: 1rem; */
     }
     
     .portfolio-button a {
